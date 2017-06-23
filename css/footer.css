@@ -1,9 +1,11 @@
 .contenedorFooter {
     width: 100%;
-    height: 660px;
-    margin-left: 7em;
+    height: 60px;
+    margin-left: 0em;
     margin-top: 0;
-    padding: 4em;
-    color: teal;
-    border: 1px solid gray;
+    padding: 0em;
+    border: 1px solid #dbdada;
+    background-color: rgba(0, 128, 128, .9);
+    text-align: center;
+    color: #ffffff;
 }

@@ -33,7 +33,7 @@ a:hover{
     background-position: center;
     background-size: cover;
     color: aqua;
-    border: 1px solid gray;
+    border: 1px solid #dbdada;
 }
 
 .tipografiaContenido {
