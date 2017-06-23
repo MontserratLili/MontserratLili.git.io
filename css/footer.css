@@ -1,0 +1,9 @@
+.contenedorFooter {
+    width: 100%;
+    height: 660px;
+    margin-left: 7em;
+    margin-top: 0;
+    padding: 4em;
+    color: teal;
+    border: 1px solid gray;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Mobile First Design-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montserrat Lili</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--Conexión con estilos propios-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sobremi.css">
+    <link rel="stylesheet" href="css/habilidades.css">
+    <link rel="stylesheet" href="css/proyectos.css">
+    <link rel="stylesheet" href="css/cv.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--Conexión con Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Josefin+Sans|Monoton" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--BARRA DE NAVEGACIÓN COLAPSABLE
+    <section class="row contenedorSeccion">
+    </section>-->
+    <!--PRIMERA SECCIÓN * HOME-->
+    <section id="home" class="contenedorSeccionHome">
+        <div class="row">
+            <h6 class="tipografiaTitulos col-md-12 col-xs-10  text-center">Bienvenido</h6>
+            <div class="row">
+                <div class="col-md-3 col-xs-10 col-xs-offset-1 contenedorLista">
+                    <a href="#sobreMi">
+                        <span class="puntos">°°°°°°°
+                            <span class="tipografiaContenido">Sobre Mí</span>
+                        </span>
+                    </a><br>
+                    <a href="#habilidades">
+                        <span class="puntos">°°°°°
+                            <span class="tipografiaContenido">Habilidades</span>
+                        </span>
+                    </a><br>
+                    <a href="#proyectos">
+                        <span class="puntos">°°°
+                            <span class="tipografiaContenido">Proyectos</span>
+                        </span>
+                    </a><br>
+                    <a href="#cv">
+                        <span class="puntos">°°
+                            <span class="tipografiaContenido">Descarga Mi CV</span>
+                        </span>
+                    </a><br>
+                    <a href="#contacto">
+                        <span class="puntos">°
+                            <span class="tipografiaContenido">Contácto</span>
+                        </span>
+                    </a><br>
+                </div>
+                <div class="col-md-4 col-xs-10 col-xs-offset-1 contenedorImagenHome">
+                    <img id="imagenMovimiento" src="assets/imagenes/montserrat.gif" alt="" class="gif img-responsive">
+                    <img id="imagenFija" src="assets/imagenes/ocho.jpg" alt="" class="gif img-responsive">
+                </div>
+                <div class="contenedorProfesion">
+                    <p class="tipografiaContenido col-md-2 col-xs-12">Front-end Web <br> Developer <br>
+                        <span1>|Administradora</span1>
+                    </p>
+                </div>
+            </div>
+            <p class="minombre col-md-8 col-md-offset-2 col-xs-11 col-xs-offset-1">Montserrat ° Lili</p>
+        </div>
+    </section>
+
+    <!--SEGUNDA SECCIÓN * SOBRE MÍ-->
+    <section id="sobreMi" class="contenedorSobreMi">
+
+        <div class="row imagenesYo">
+            <p class="text-center"><a href="#home">*</a></p>
+            <div class="imagenYo col-md-6">
+                <img src="assets/imagenes/mon.png" alt="" class="img-responsive yoIniciales">
+            </div>
+            <div class="textoYo col-md-6">
+                <h2>Sobre Mí</h2>
+                <p>Soy Laura Montserrat Lili González, Desarrolladora Front-End Junior, interesada en colaborar através de mi trabajo al desarrollo de proyectos que beneficien a otros. ¿Cómo lo haré? comprometiéndome siempre con mi labor y pensando en el beneficio de los demás.</p>
+            </div>
+            <div class="col-md-12">
+                <p id="mas" type="button" class="text-center tipografiaTitulos">| + |</p>
+            </div>
+        </div>
+        <div class="row intereses">
+            <div class="">
+                <h2>Interéses</h2><br>
+                <span class="col-md-3">Crecimiento<br> Profesional
+                    <div class="contenedorImagenesIntereses">
+                        <p class="vineta"></p>
+                        <img class="imagenesIntereses" src="assets/imagenes/cuatro.jpg">
+                    </div>
+                </span>
+                <span class="col-md-3">Aprender Nuevas<br> Tecnologías
+                    <div class="contenedorImagenesIntereses">
+                        <p class="vineta"></p>
+                        <img class="imagenesIntereses" src="assets/imagenes/cuatro.jpg">
+                    </div>
+                </span>
+                <span class="col-md-3">Viajar<br>.
+                    <div class="contenedorImagenesIntereses">
+                        <p class="vineta"></p>
+                        <img class="imagenesIntereses" src="assets/imagenes/cuatro.jpg">
+                    </div>
+                </span>
+                <span class="col-md-3">Música <br>.
+                    <div class="contenedorImagenesIntereses">
+                        <p class="vineta"></p>
+                        <img class="imagenesIntereses" src="assets/imagenes/cuatro.jpg">
+                    </div>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!--TERCERA SECCIÓN * HABILIDADES-->
+    <section id="habilidades">
+        <div class="parallax container">
+            <div class="contenedorHabilidades">
+                <p class="text-center"><a href="#home">*</a></p>
+                <h1>Habilidades</h1>
+                <div id="accordion" class="panel-group">
+                    <ul class="habilidadesColumna col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Socio - Emocionales</a>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <li class="elementoLista panel-body">Lorem</li>
+                        </div>
+                    </ul>
+                    <ul class="habilidadesColumna col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Desarrollo Web</a>
+                        <div id="collapse2" class="panel-collapse collapse in">
+                            <li class="elementoLista">HTML5</li>
+                            <li class="elementoLista">CSS3</li>
+                            <li class="elementoLista">JavaScript</li>
+                            <li class="elementoLista">jQuery</li>
+                            <li class="elementoLista">Frameworks</li>
+                            <li class="elementoLista">Bootstrap</li>
+                            <li class="elementoLista">Materialize</li>
+                            <li class="elementoLista">Foundation</li>
+                            <li class="elementoLista">Flexbox</li>
+                            <li class="elementoLista">UX Desing</li>
+                            <li class="elementoLista">Git</li>
+                            <li class="elementoLista">Git Hub</li>
+                            <li class="elementoLista">Heroku</li>
+                        </div>
+                    </ul>
+                    <ul class="habilidadesColumna col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Desarrollo Web</a>
+                        <div id="collapse3" class="panel-collapse collapse in">
+                            <li class="elementoLista">Sketch</li>
+                            <li class="elementoLista">Microsoft Office</li>
+                            <li class="elementoLista">ASPEL COI, NOI, SAE</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CUARTA SECCIÓN * PROYECTOS-->
+    <section id="proyectos" class="contenedorProyectos">
+        <p class="text-center"><a href="#home">*</a></p>
+        <h2>Proyectos</h2>
+    </section>
+
+    <!--QUINTA SECCIÓN * DESCARGA MI CV-->
+    <section id="cv" class="row contenedorCv">
+        <p class="text-center"><a href="#home">*</a></p>
+    </section>
+
+    <!--QUINTA SECCIÓN * CONTACTO-->
+    <section id="contacto" class="row contenedorContacto">
+        <p class="text-center"><a href="#home">*</a></p>
+        <h2>UBICACIÓN</h2>
+        <div>Mapa</div>
+        <h2>Trabajemos Juntos!</h2>
+        <p>GITHUB</p>
+        <p>LINKEDIN</p>
+        <p>GMAIL</p>
+        <p>TELEFONOS</p>
+    </section>
+
+    <!--SEXTA SECCIÓN * FOOTER-->
+    <section id="footer" class="row contenedorFooter">
+        <p class="text-center"><a href="#home">*</a></p>
+        <p>Laura Montserrat Lili González | Junio 2017 | Laboratoria México.</p>
+    </section>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
