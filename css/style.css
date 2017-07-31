@@ -1,129 +1,47 @@
-/*General*/
+/*Estilos Generales*/
 
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    
 }
 
 body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Josefin Sans', sans-serif;
+     display: flex;
+    flex-wrap: wrap;
+}
+
+/*Secciones*/
+.seccion{
+    width: 100%;
+    height: 662px;
+    padding: 100px;
+}
+.row{
+    margin: 0px;
+}
+
+/*Transición Secciones*/
+.panel{
+	min-width: 100%;
+	height: 100%;
+	margin-top: -150%;
+	position: absolute;
+	box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+	z-index: 2;
+	-webkit-transition: all .8s ease-in-out;
+	-moz-transition: all .8s ease-in-out;
+	-o-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+.panel:target{
+   margin-top: 0%;
 }
 
 a{
     text-decoration: none;
-    text-decoration-line: none;
-}
-a:hover{
-    text-decoration: none;
-    text-decoration-line: none;
-    color:teal;
-}
-.contenedorSeccionHome {
-    width: 100%;
-    height: 660px;
-    margin: 0px;
-    margin-top: 0;
-    padding: 0em;
-    background-image: url("../assets/imagenes/o.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: aqua;
-    border: 1px solid #dbdada;
-}
-
-.tipografiaContenido {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.9em;
-    color: teal;
-}
-
-.tipografiaTitulos {
-    font-family: 'Audiowide', cursive;
-    font-size: 1.5em;
-    letter-spacing: 0.2em;
-    text-align: center;
-    color: mediumvioletred;
-}
-.puntos{
-    color: #00ff31;
-}
-
-.minombre {
-    font-family: 'Audiowide', cursive;
-    font-size: 3.5em;
-    letter-spacing: 0.5em;
-    text-align: center;
-    color: mediumvioletred;
-}
-
-.tipografiaNombre {
-    font-family: 'Monoton', cursive;
-    font-size: 3em;
-    letter-spacing: 0.5em;
-}
-
-
-/*PRIMERA SECCIÓN * HOME*/
-
-.imagenes {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin: 0;
-}
-
-.contenedorImagenHome {
-    width: 300px;
-    height: 470px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    padding-top: 4.5em;
-    padding-bottom: 4em;
-}
-
-.gif {
-    border-radius: 50%;
-    justify-content: center;
-}
-
-#imagenFija {
-    display: none;
-}
-
-.contenedorProfesion {
-    margin-top: 20%;
-}
-
-.contenedorLista {
-    margin-top: 10%;
-}
-
-
-/*Efecto aparecer*/
-
-span1 {
-    display: inline-block;
-    color: #00ff31;
-    position: relative;
-    white-space: nowrap;
-    top: 0;
-    left: 0;
-    -webkit-animation: move 10s;
-    -webkit-animation-iteration-count: 10;
-    -webkit-animation-delay: 5s;
-}
-
-@keyframes move {
-    0% {
-        top: 0px;
-    }
-    20% {
-        top: -200px;
-    }
 }

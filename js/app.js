@@ -1,10 +1,7 @@
-
-
-var irIntereses = document.getElementById("mas");
-
-function mostrarIntereses(){
-    document.getElementById("intereses").style.display = "inline-block";
-};
-
-irIntereses.addEventListener("click", mostrarIntereses);
-
+$(document).ready(function () {
+    setTimeout(function () {
+        document.getElementById("bienvenido").style.display = "none";
+        location.href = ("#home");
+    }, 3000);
+    $('.carousel.carousel-slider').carousel({fullWidth: true}); 
+});

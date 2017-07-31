@@ -1,23 +1,8 @@
-.contenedorContacto {
-    width: 85%;
-    height: 660px;
-    margin-left: 7em;
-    margin-top: 0;
-    padding: 5em;
-    color: #7101a0;
-    border: 1px solid #dbdada;
-    background-color: rgba(6, 255, 245, 0.7);
-}
-.parallax1 {
-    background-image: url("../assets/imagenes/mapa.jpg");
-    margin: 0px;
-    margin-top: 0;
-    width: 100%;
-    height: 660px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.contacto{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 ul.social-network {
@@ -34,22 +19,20 @@ ul.social-network li {
 
 /* footer social icons */
 .social-network a.icoRss:hover {
-	background-color: #F56505;
+	background-color: #794092;
 }
 .social-network a.icoFacebook:hover {
-	background-color:#3B5998;
+	background-color:#00ADB1;
 }
 .social-network a.icoTwitter:hover {
-	background-color:#33ccff;
+	background-color:#794092;
 }
 .social-network a.icoGoogle:hover {
-	background-color:#BD3518;
+	background-color:#00ADB1;
 }
-.social-network a.icoVimeo:hover {
-	background-color:#0590B8;
-}
+
 .social-network a.icoLinkedin:hover {
-	background-color:#007bb7;
+	background-color:#794092;
 }
 .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
 .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
@@ -96,12 +79,15 @@ a.socialIcon:hover, .socialHoverClass {
 	-ms-transition: all 0.8s;
 	transition: all 0.8s;
 }
-
-a {
- background-color: #D3D3D3;   
+.iconosContacto {
+ background-color: #000000;   
 }
-
-
-
-
-
+.formulario{
+    margin: 30px;
+}
+.fuente{
+    font-size: 18px;
+}
+.datosContacto{
+    margin:30px;  
+}

@@ -3,271 +3,195 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--Mobile First Design-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Montserrat Lili</title>
     <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <!--Conexión con estilos propios-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sobremi.css">
+    <link rel="stylesheet" href="css/proyectos.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/sobreMi.css">
     <link rel="stylesheet" href="css/habilidades.css">
     <link rel="stylesheet" href="css/proyectos.css">
-    <link rel="stylesheet" href="css/cv.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/footer.css">
-    <!--Conexión con Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Audiowide|Josefin+Sans|Monoton" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
-    <!--BARRA DE NAVEGACIÓN COLAPSABLE
-    <section class="row contenedorSeccion">
-    </section>-->
-    <!--PRIMERA SECCIÓN * HOME-->
-    <section id="home" class="contenedorSeccionHome">
+    <!--BIENVENIDO-->
+    <section id="bienvenido" class="seccion row seccionhome transicion">
+        <h1 class="">BIENVENIDO</h1>
+    </section>
+    <!--PRIMERA SECCIÓN *** HOME-->
+    <section id="home" class="seccion row seccionhome ">
+        <div class="col s7  offset-s1">
+            <img class="responsive-img" src="assets/imagenes/nombreCompleto.png" alt="">
+            <ul class="col s4 offset-s6">
+                <li class="right menu-opciones">
+                    <a class="black-text" href="#sobreMi">| SOBRE MI |</a>
+                </li>
+                <li class="right menu-opciones">
+                    <a class="black-text" href="#habilidades">| HABILIDADES |</a>
+                </li>
+                <li class="right menu-opciones">
+                    <a class="black-text" href="#proyectos">| PROYECTOS |</a>
+                </li>
+                <li class="right menu-opciones">
+                    <a class="black-text" href="#contacto">| CONTACTO |</a>
+                </li>
+                <li class="right menu-opciones">
+                    <a class="black-text" href="assets/documentos/MontserratLiliCV.pdf">| MI CV |</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col s4">
+            <img class="left responsive-img z-depth-5 home-gif" src="assets/imagenes/montserrat.gif" alt="">
+        </div>
+    </section>
+
+    <!--SEGUNDA SECCIÓN *** SOBRE MÍ-->
+    <section id="sobreMi" class="seccion row sobremi panel white-text">
+        <div class="col s1">
+            <a class="teal-text " href="#home">
+                <i class="medium material-icons pulse white circle">keyboard_arrow_left</i>
+            </a>
+        </div>
+        <div class="col s3 offset-s1">
+            <img class="responsive-img z-depth-5" src="assets/imagenes/yoauditorio.jpg" alt="">
+        </div>
+        <div class="col s6 offset-s1">
+            <h3>Hola!</h3>
+            <p class="texto">Soy Montserrat Lili, Administradora de profesión, programadora por vocación. Egresada de la 4a generación de Laboratoria, me encanta la tecnología y el impacto que tiene el código en la vida de las personas.</p><br>
+            <p class="texto"><i>"Programando podemos crear un mundo mejor."</i></p>
+        </div>
+    </section>
+
+    <!--TERCERA SECCIÓN *** HABILIDADES-->
+    <section id="habilidades" class="seccion row habilidades panel black-text">
+        <div class="col s1">
+            <a class="white-text " href="#home">
+                <i class="medium material-icons pulse black circle">keyboard_arrow_left</i>
+            </a>
+        </div>
+        <div class="col s11 carousel carousel-slider center fondoCarousel" data-indicators="true">
+            <div class="carousel-item black-text" href="#one!">
+                <h2>Habilidades Técnicas</h2>
+                <p class="black-text">This is your second panel</p>
+            </div>
+            <div class="carousel-item black-text" href="#two!">
+                <h2>Habilidades Socio-Emocionales</h2>
+                <p class="black-text">This is your second panel</p>
+            </div>
+            <div class="carousel-item black-text" href="#three!">
+                <h2>Habilidades de Productividad</h2>
+                <p class="black-text">This is your third panel</p>
+            </div>
+        </div>
+    </section>
+
+    <!--CUARTA SECCIÓN *** PROYECTOS-->
+    <section id="proyectos" class="proyectos panel white-text container">
         <div class="row">
-            <h6 class="tipografiaTitulos col-md-12 col-xs-10  text-center">Bienvenido</h6>
-            <div class="row">
-                <div class="col-md-3 col-xs-10 col-xs-offset-1 contenedorLista">
-                    <a href="#sobreMi">
-                        <span class="puntos">°°°°°°°
-                            <span class="tipografiaContenido">Sobre Mí</span>
-                        </span>
-                    </a><br>
-                    <a href="#habilidades">
-                        <span class="puntos">°°°°°
-                            <span class="tipografiaContenido">Habilidades</span>
-                        </span>
-                    </a><br>
-                    <a href="#proyectos">
-                        <span class="puntos">°°°
-                            <span class="tipografiaContenido">Proyectos</span>
-                        </span>
-                    </a><br>
-                    <a href="#cv">
-                        <span class="puntos">°°
-                            <span class="tipografiaContenido">Descarga Mi CV</span>
-                        </span>
-                    </a><br>
-                    <a href="#contacto">
-                        <span class="puntos">°
-                            <span class="tipografiaContenido">Contácto</span>
-                        </span>
-                    </a><br>
-                </div>
-                <div class="col-md-4 col-xs-10 col-xs-offset-1 contenedorImagenHome">
-                    <img id="imagenMovimiento" src="assets/imagenes/montserrat.gif" alt="" class="gif img-responsive">
-                    <img id="imagenFija" src="assets/imagenes/ocho.jpg" alt="" class="gif img-responsive">
-                </div>
-                <div class="contenedorProfesion">
-                    <p class="tipografiaContenido col-md-2 col-xs-12">Front-end Web <br> Developer <br>
-                        <span1>|Administradora</span1>
-                    </p>
-                </div>
+            <h2 class="titulo">Proyectos</h2>
+        </div>
+        <div class="row">
+            <div class="col s1 boton">
+                <a class="purple-text " href="#home">
+                    <i class="medium material-icons pulse white circle">keyboard_arrow_left</i>
+                </a>
             </div>
-            <p class="minombre col-md-8 col-md-offset-2 col-xs-11 col-xs-offset-1">Montserrat ° Lili</p>
+            <div class="gal col s11 offset-s1">
+                <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+                <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
+                <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
+                <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+                <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""><img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+                <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+                <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+                <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+            </div>
         </div>
     </section>
 
-    <!--SEGUNDA SECCIÓN * SOBRE MÍ-->
-    <section id="sobreMi" class="contenedorSobreMi">
-
-        <div class="row imagenesYo">
-            <p class="text-center"><a href="#home">*</a></p>
-            <div class="imagenYo col-md-6">
-                <img src="assets/imagenes/mon.png" alt="" class="img-responsive yoIniciales">
-            </div>
-            <div class="textoYo col-md-6">
-                <h2>Sobre Mí</h2>
-                <p>Soy Laura Montserrat Lili González, Desarrolladora Front-End Junior, interesada en colaborar através de mi trabajo al desarrollo de proyectos que beneficien a otros. ¿Cómo lo haré? comprometiéndome siempre con mi labor y pensando en el beneficio de los demás.</p>
-            </div>
-            <div class="col-md-12">
-                <p id="mas" type="button" class="text-center tipografiaTitulos">| + |</p>
-            </div>
+    <!--QUINTA SECCIÓN *** CONTACTO-->
+    <section id="contacto" class="seccion row contacto panel black-text container center">
+        <div class="col s1">
+            <a class="white-text " href="#home">
+                <i class="medium material-icons pulse black circle">keyboard_arrow_left</i>
+            </a>
         </div>
-        <div class="row intereses">
+        <div class="col s11">
+            <h2 class="">Trabajemos Juntos!</h2>
+            <button class="btn black waves-effect waves-light datosContacto" type="button" title="Descarga mi CV"><a href="assets/documentos/MontserratLiliCV.pdf" class="white-text">Mi CV</a></button><br>
             <div class="">
-                <h2>Interéses</h2><br>
-                <span class="col-md-3">Crecimiento<br> Profesional
-                    <div class="contenedorImagenesIntereses">
-                        <p class="vineta"></p>
-                        <img class="imagenesIntereses" src="assets/imagenes/cuatro.jpg">
-                    </div>
-                </span>
-                <span class="col-md-3">Aprender Nuevas<br> Tecnologías
-                    <div class="contenedorImagenesIntereses">
-                        <p class="vineta"></p>
-                        <img class="imagenesIntereses" src="assets/imagenes/cuatro.jpg">
-                    </div>
-                </span>
-                <span class="col-md-3">Viajar<br>.
-                    <div class="contenedorImagenesIntereses">
-                        <p class="vineta"></p>
-                        <img class="imagenesIntereses" src="assets/imagenes/cuatro.jpg">
-                    </div>
-                </span>
-                <span class="col-md-3">Música <br>.
-                    <div class="contenedorImagenesIntereses">
-                        <p class="vineta"></p>
-                        <img class="imagenesIntereses" src="assets/imagenes/cuatro.jpg">
-                    </div>
-                </span>
+                <h5>Montserrat Lili</h5>
+                <h5>(+52) 04455 17928970</h5>
+                <h5>Oriente de la Ciudad de México</h5>
+                <h5><a href="mailto:lauraliligm@gmail.com">lauraliligm@gmail.com</a></h5>
             </div>
-        </div>
-    </section>
-
-    <!--TERCERA SECCIÓN * HABILIDADES-->
-    <section id="habilidades">
-        <div class="parallax container">
-            <div class="contenedorHabilidades">
-                <p class="text-center"><a href="#home">*</a></p>
-                <h1>Habilidades</h1>
-                <div id="accordion" class="panel-group">
-                    <ul class="habilidadesColumna col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Socio - Emocionales</a>
-                        <div id="collapse1" class="panel-collapse collapse in">
-                            <li class="elementoLista panel-body">Lorem</li>
-                        </div>
-                    </ul>
-                    <ul class="habilidadesColumna col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Desarrollo Web</a>
-                        <div id="collapse2" class="panel-collapse collapse in">
-                            <li class="elementoLista">HTML5</li>
-                            <li class="elementoLista">CSS3</li>
-                            <li class="elementoLista">JavaScript</li>
-                            <li class="elementoLista">jQuery</li>
-                            <li class="elementoLista">Frameworks</li>
-                            <li class="elementoLista">Bootstrap</li>
-                            <li class="elementoLista">Materialize</li>
-                            <li class="elementoLista">Foundation</li>
-                            <li class="elementoLista">Flexbox</li>
-                            <li class="elementoLista">UX Desing</li>
-                            <li class="elementoLista">Git</li>
-                            <li class="elementoLista">Git Hub</li>
-                            <li class="elementoLista">Heroku</li>
-                        </div>
-                    </ul>
-                    <ul class="habilidadesColumna col-md-4"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Desarrollo Web</a>
-                        <div id="collapse3" class="panel-collapse collapse in">
-                            <li class="elementoLista">Sketch</li>
-                            <li class="elementoLista">Microsoft Office</li>
-                            <li class="elementoLista">ASPEL COI, NOI, SAE</li>
-                        </div>
-                    </ul>
+            <div class="datosContacto">
+                <ul class="social-network social-circle">
+                    <li>
+                        <a href="https://github.com/MontserratLili" class="icoRss iconosContacto" title="Github">
+                            <i class="fa fa-github-alt fa-1x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/montserrat-lili/" class="icoFacebook iconosContacto" title="Linkedin">
+                            <i class="fa fa-linkedin fa-1x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icoTwitter iconosContacto" title="Skype">
+                            <i class="fa fa-skype fa-1x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/MontserratLili/" class="icoGoogle iconosContacto" title="Codepen">
+                            <i class="fa fa-codepen fa-1x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icoLinkedin iconosContacto" title="Enviar Mensaje">
+                            <i class="fa fa-paper-plane"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <form class="formulario" action="mailto:lauraliligm@gmail.com">
+                <div class="">
+                    <label class="fuente">Nombre</label>
+                    <input type="text" class="fuente" id="" placeholder="Ingresa tú nombre">
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!--CUARTA SECCIÓN * PROYECTOS-->
-    <section id="proyectos" class="contenedorProyectos">
-        <p class="text-center"><a href="#home">*</a></p>
-        <div class="container">
-            <h2>Proyectos</h2>
-            <div class="col-md-12">
-                <div class="row">
-                    <hr>
-                    <div class="gal">
-                        <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-                        <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
-                        <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
-                        <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-                        <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""><img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-                        <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-                        <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-                        <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-                    </div>
+                <div class="">
+                    <label class="fuente">E-mail</label>
+                    <input type="email" class="fuente" id="" placeholder="Ingresa tú e-mail">
                 </div>
-            </div>
+                <div class="">
+                    <label class="fuente">Número de contácto</label>
+                    <input type="tel" class="fuente" id="" placeholder="Ingresa tú número">
+                </div>
+                <div class="">
+                    <label class="fuente">Mensaje</label>
+                    <textarea class="fuente" id="" placeholder="Ingresa tú mensaje"></textarea>
+                </div>
+                <div>
+                    <button type="button" class="btn submit"><i class="large material-icons">send</i>  Envía Mensaje</button>
+                </div>
+            </form>
         </div>
-    </section>
-
-    <!--QUINTA SECCIÓN * DESCARGA MI CV-->
-    <section id="cv" class="row contenedorCv">
-        <p class="text-center"><a href="#home">*</a></p>
-    </section>
-
-    <!--QUINTA SECCIÓN * CONTACTO-->
-    <section id="contacto" class="parallax1">
-       <div class="contenedorContacto">
-        <p class="text-center"><a href="#home">*</a></p>
-        <div class="row col-md-12 ">
-        <h2>UBICACIÓN</h2>
-        <div>Mapa</div>
-        
-        <h2>Trabajemos Juntos!</h2><br>
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-
-    			<div class="col-md-12">
-                    <ul class="social-network social-circle">
-                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>				
-				</div>
-
-        </div>
-        <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
-   	<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
-   	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  
-<section id="contact">
-			<div class="section-content">
-				<h1 class="section-header">No olvides <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> escribir</span></h1>
-				
-			</div>
-			<div class="contact-section">
-			<div class="container">
-				<form>
-					<div class="col-md-6 form-line">
-			  			<div class="form-group">
-			  				<label for="exampleInputUsername">Your name</label>
-					    	<input type="text" class="form-control" id="" placeholder=" Enter Name">
-				  		</div>
-				  		<div class="form-group">
-					    	<label for="exampleInputEmail">Email Address</label>
-					    	<input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
-					  	</div>	
-					  	<div class="form-group">
-					    	<label for="telephone">Mobile No.</label>
-					    	<input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
-			  			</div>
-			  		</div>
-			  		<div class="col-md-5">
-			  			<div class="form-group">
-			  				<label for ="description"> Message</label>
-			  			 	<textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
-			  			</div>
-			  			<div>
-
-			  				<button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
-			  			</div>
-			  			
-					</div>
-				</form>
-			</div>
-		</section>
-        </div>
-    </section>
-
-    <!--SEXTA SECCIÓN * FOOTER-->
-    <section id="footer" class="contenedorFooter">
-        <p class="text-center"><a href="#home">*</a></p>
-        <p>Laura Montserrat Lili González | Junio 2017 | Laboratoria México.</p>
     </section>
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/a2f6b316cb.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>

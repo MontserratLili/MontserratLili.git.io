@@ -1,11 +1,3 @@
-.contenedorFooter {
-    width: 100%;
-    height: 60px;
-    margin-left: 0em;
-    margin-top: 0;
-    padding: 0em;
-    border: 1px solid #dbdada;
-    background-color: rgba(0, 128, 128, .9);
-    text-align: center;
-    color: #ffffff;
+.footer{
+    background-color: #00ADB1;
 }
