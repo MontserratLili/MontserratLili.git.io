@@ -84,6 +84,7 @@ a.socialIcon:hover, .socialHoverClass {
 }
 .formulario{
     margin: 30px;
+    display:none;
 }
 .fuente{
     font-size: 18px;
