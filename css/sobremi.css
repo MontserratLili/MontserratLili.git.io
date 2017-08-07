@@ -1,5 +1,8 @@
 .sobremi{
-    background: #00ADB1;
+    background-color: #00ADB1;
+    padding: 50px 100px 100px 100px;
+    width: 100%;
+    height: 660px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
